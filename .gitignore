@@ -1,0 +1,13 @@
+
+uploads/
+.env
+
+
+
+**/docker-compose.yml
+
+common-security/target/
+
+docker/nginx/logs/
+
+docker/ecommerce-frontend/.env

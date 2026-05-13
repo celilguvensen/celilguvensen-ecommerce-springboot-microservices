@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Wait for Elasticsearch",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Write-Host 'Elasticsearch bekleniyor...'; while(!(Test-NetConnection localhost -Port 9200 -InformationLevel Quiet -WarningAction SilentlyContinue)) { Write-Host 'ES henuz hazir degil, 3sn bekleniyor...'; Start-Sleep 3 }; Write-Host 'Elasticsearch hazir!'"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CartServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.cartservice.CartServiceApplication",
+            "projectName": "cart-service",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Xms256m -Xmx512m -Dspring.output.ansi.enabled=always"
+        },
+        {
+            "type": "java",
+            "name": "OrderServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.orderservice.OrderServiceApplication",
+            "projectName": "order-service",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Xms256m -Xmx512m -Dspring.output.ansi.enabled=always"
+        },
+        {
+            "type": "java",
+            "name": "ProductServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.productservice.ProductServiceApplication",
+            "projectName": "product-service",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Xms256m -Xmx512m -Dspring.output.ansi.enabled=always"
+        },
+        {
+            "type": "java",
+            "name": "UserServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.userservice.UserServiceApplication",
+            "projectName": "user-service",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Xms256m -Xmx512m -Dspring.output.ansi.enabled=always"
+        },
+        {
+            "type": "java",
+            "name": "SearchServiceApplication",
+            "request": "launch",
+            "mainClass": "com.ecommerce.search.SearchServiceApplication",
+            "projectName": "search-service",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Xms256m -Xmx512m -Dspring.output.ansi.enabled=always",
+            "preLaunchTask": "Wait for Elasticsearch"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "🚀 Tüm Mikroservisleri Başlat",
+            "configurations": [
+                "UserServiceApplication",
+                "ProductServiceApplication",
+                "CartServiceApplication",
+                "OrderServiceApplication",
+                "SearchServiceApplication"
+            ],
+            "stopAll": true
+        }
+    ]
+}

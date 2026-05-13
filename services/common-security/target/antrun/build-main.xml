@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <replaceregexp file="C:\Users\Celil\Desktop\ecommerce-platform\services\common-security\target/filtered-sources" match="(?m)^\s*//.*$" replace="" />
+    <replaceregexp file="C:\Users\Celil\Desktop\ecommerce-platform\services\common-security\target/filtered-sources" match="(?m)^\s*$" replace="" />
+  </target>
+</project>

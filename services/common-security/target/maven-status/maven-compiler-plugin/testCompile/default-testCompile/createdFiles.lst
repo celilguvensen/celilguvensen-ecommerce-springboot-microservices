@@ -1,0 +1,5 @@
+com\commonsecurity\JwtService.class
+com\commonsecurity\SecurityHeaderFilter.class
+com\commonsecurity\SecurityContext.class
+com\commonsecurity\SecurityHeaderFilter$1.class
+com\commonsecurity\SecurityConfig.class

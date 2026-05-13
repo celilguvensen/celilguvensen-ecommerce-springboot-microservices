@@ -190,6 +190,12 @@ ORDER_DB_URI=mongodb://localhost:27017/orderdb
 KAFKA_BOOTSTRAP_SERVERS=host.docker.internal:9092
 KAFKA_GROUP_ID=product-group
 KAFKA_AUTO_OFFSET_RESET=earliest
+
+# Search-Service
+SEARCH_SERVICE_PORT=8084
+ELASTIC_SEARCH_URI=https://localhost:9200
+ELASTIC_USERNAME=your_username
+ELASTIC_PASSWORD=your_password
 ```
 
 > ⚠️ **Never commit `.env`** — it is in `.gitignore`. Only `.env.example` is tracked by git.
@@ -240,6 +246,7 @@ mvn spring-boot:run
 | Order Service | 8082 |
 | Cart Service | 8083 |
 | User Service | 8085 |
+| Search Service | 8084 |
 
 ---
 
@@ -286,9 +293,6 @@ npm run dev
 
 ---
 
-## 📄 License
-
-MIT License
 
 ---
 
